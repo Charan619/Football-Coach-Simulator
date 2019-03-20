@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1553004091 source:c:\users\admin\desktop\fut\team.cpp
+	"Team.h"
+	"Player.h"
+
+1553003265 c:\users\admin\desktop\fut\team.h
+	"Player.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1551892911 c:\users\admin\desktop\fut\player.h
+	<iostream>
+	<fstream>
+	<string.h>
+
+1552895211 source:c:\users\admin\desktop\fut\main.cpp
+	"Player.h"
+	"Team.h"
+	<iostream>
+
+1551892786 source:c:\users\admin\desktop\fut\player.cpp
+	"Player.h"
+
