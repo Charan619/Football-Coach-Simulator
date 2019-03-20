@@ -1,7 +1,7 @@
 #include "Team.h"
 #include "Player.h"
 
-Team::Team()
+Team::Team(int no)
 {
     pts=0,wins=0,loss=0,goals_for=0,goals_against=0,goals_diff=0,goals_for=0;
     p=new Player[17];
@@ -9,7 +9,7 @@ Team::Team()
     team_name=new char[20];
     fstream file_obj,file_obj2;
 /*
-Player obj;
+    Player obj;
     obj.Setname("KRC");
     obj.Settype(9);
     obj.Setpac(88);
@@ -28,10 +28,17 @@ Player obj;
     // Object of class contestant to input data in file
 
     int i=-1;
-    Player obj2;
+    char file_name[20]="Team_";
+    char file_no[5];
+    itoa(no,file_no,10);
+    cout<<"hi";
+    strcat(file_name,file_no);
+    strcat(file_name,".txt");
+    cout<<file_name;
+    cout<<"hey";
    // cout<<obj2.Getname();
     // Reading from file into object "obj2"
-    file_obj2.open("Team_1.txt");
+    file_obj2.open(file_name);
     char name[20];
     int u;
     file_obj2.getline(team_name,20,'\n');

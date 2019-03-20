@@ -22,3 +22,27 @@
 1551892786 source:c:\users\admin\desktop\fut\player.cpp
 	"Player.h"
 
+1553072245 source:z:\fut\team.cpp
+	"Team.h"
+	"Player.h"
+
+1553071935 z:\fut\team.h
+	"Player.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1553071980 z:\fut\player.h
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdlib.h>
+
+1553072127 source:z:\fut\main.cpp
+	"Player.h"
+	"Team.h"
+	<iostream>
+
+1553070131 source:z:\fut\player.cpp
+	"Player.h"
+

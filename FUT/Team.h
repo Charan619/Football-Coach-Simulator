@@ -9,7 +9,7 @@ using namespace std;
 class Team
 {
     public:
-        Team();
+        Team(int no);
         char* Getteam_name() { return team_name; }
         void Setteam_name(char* val) { strcpy(team_name,val); }
         char* Getteam_code() { return team_code; }

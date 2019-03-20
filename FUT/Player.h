@@ -3,6 +3,7 @@
 #include<iostream>
 #include<fstream>
 #include<string.h>
+#include<stdlib.h>
 using namespace std;
 
 class Player
@@ -24,6 +25,8 @@ class Player
         void Setpas(float val) { pas = val; }
         float Getphy() { return phy; }
         void Setphy(float val) { phy = val; }
+        int Getgoals() { return goals; }
+        void Setphy(int val) { goals = val; }
     protected:
     private:
         char *name;
@@ -34,6 +37,7 @@ class Player
         float def;
         float pas;
         float phy;
+        int goals;
 };
 #endif
 
