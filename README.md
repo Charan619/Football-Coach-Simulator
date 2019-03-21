@@ -11,3 +11,6 @@ if AS of team 1 and DS of team 2:
 -3 and 2, *1.2 mod att stats
 -2 and 1, *1.3 att
 -3 and 1, *1.4 att
+
+AW of team 1 and DW of team 2:
+-
