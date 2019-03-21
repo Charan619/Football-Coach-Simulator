@@ -10,7 +10,7 @@ class Player
 {    public:
         Player();
         char *Getname(){return name;}
-        void Setname(char *str){strcpy(name,str);}
+        void Set_name(char *str){strcpy(name,str);}
         float Gettype(){return type;}
         void Settype(int val){type=val;}
         float Getpac() { return pac; }

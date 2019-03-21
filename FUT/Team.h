@@ -34,6 +34,14 @@ class Team
         void Setmatches(int val) { matches = val; }
         int Getstart11[11]() { return start11[11]; }
         void Setstart11[11](int val) { start11[11] = val; }*/
+        int Get_attack_style() { return attack_style; }
+        void Set_attack_style(int val) { attack_style = val; }
+        int Get_defence_style() { return defence_style; }
+        void Set_defence_style(int val) { defence_style = val; }
+        int Get_attack_width() { return attack_width; }
+        void Set_attack_width(int val) { attack_width= val; }
+        int Get_defence_width() { return defence_width; }
+        void Set_defence_width(int val) { defence_width= val; }
     protected:
     private:
         char *team_name;
@@ -48,6 +56,10 @@ class Team
         int goals_diff;
         int matches;
         int start11[11];
+        int attack_style;
+        int defence_style;
+        int attack_width;
+        int defence_width;
 };
 
 #endif // TEAM_H

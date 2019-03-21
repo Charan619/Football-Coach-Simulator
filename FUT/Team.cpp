@@ -10,7 +10,7 @@ Team::Team(int no)
     fstream file_obj,file_obj2;
 /*
     Player obj;
-    obj.Setname("KRC");
+    obj.Set_name("KRC");
     obj.Settype(9);
     obj.Setpac(88);
     obj.Setdri(66);
@@ -48,7 +48,7 @@ Team::Team(int no)
         i++;
 
         file_obj2>>name;
-        p[i].Setname(name);
+        p[i].Set_name(name);
 
         file_obj2>>u;
         p[i].Settype(u);
@@ -73,7 +73,7 @@ Team::Team(int no)
         //file_obj2.read((char*)&obj2, sizeof(obj2));
 
     }
-    //p[i].Setname(obj2.Getname());
+    //p[i].Set_name(obj2.Getname());
     //p[i].Settype(obj2.Gettype());
     //p[i].Setpac(obj2.Getpac());
     /*p[i].dri=obj.dri;
