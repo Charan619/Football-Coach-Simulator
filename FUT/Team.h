@@ -43,7 +43,6 @@ class Team
         int Get_defence_width() { return defence_width; }
         void Set_defence_width(int val) { defence_width= val; }
     protected:
-    private:
         char *team_name;
         char *team_code;
         Player *p;

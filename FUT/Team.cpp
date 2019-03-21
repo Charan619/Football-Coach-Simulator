@@ -43,7 +43,7 @@ Team::Team(int no)
     int u;
     file_obj2.getline(team_name,20,'\n');
     file_obj2.getline(team_code,20,'\n');
-    while(i!=17&&!file_obj2.eof())
+    while(i!=16&&!file_obj2.eof())
     {
         i++;
 

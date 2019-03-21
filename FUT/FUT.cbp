@@ -32,10 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Match.cpp" />
+		<Unit filename="Match.h" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
 		<Unit filename="Team.cpp" />
 		<Unit filename="Team.h" />
+		<Unit filename="User.cpp" />
+		<Unit filename="User.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

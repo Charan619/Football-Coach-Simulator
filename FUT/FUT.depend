@@ -1,25 +1,26 @@
 # depslib dependency file v1.0
-1553004091 source:c:\users\admin\desktop\fut\team.cpp
+1553189098 source:c:\users\admin\desktop\fut\team.cpp
 	"Team.h"
 	"Player.h"
 
-1553003265 c:\users\admin\desktop\fut\team.h
+1553189098 c:\users\admin\desktop\fut\team.h
 	"Player.h"
 	<iostream>
 	<fstream>
 	<string.h>
 
-1551892911 c:\users\admin\desktop\fut\player.h
+1553189098 c:\users\admin\desktop\fut\player.h
 	<iostream>
 	<fstream>
 	<string.h>
+	<stdlib.h>
 
-1552895211 source:c:\users\admin\desktop\fut\main.cpp
+1553189121 source:c:\users\admin\desktop\fut\main.cpp
 	"Player.h"
 	"Team.h"
 	<iostream>
 
-1551892786 source:c:\users\admin\desktop\fut\player.cpp
+1553116446 source:c:\users\admin\desktop\fut\player.cpp
 	"Player.h"
 
 1553072245 source:z:\fut\team.cpp
@@ -45,4 +46,15 @@
 
 1553070131 source:z:\fut\player.cpp
 	"Player.h"
+
+1553194567 source:c:\users\admin\desktop\fut\user.cpp
+	"User.h"
+
+1553194567 c:\users\admin\desktop\fut\user.h
+	"Match.h"
+
+1553194567 c:\users\admin\desktop\fut\match.h
+	"Team.h"
+	<stdlib.h>
+	<time.h>
 

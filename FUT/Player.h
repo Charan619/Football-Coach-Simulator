@@ -28,7 +28,6 @@ class Player
         int Getgoals() { return goals; }
         void Setphy(int val) { goals = val; }
     protected:
-    private:
         char *name;
         int type;
         float pac;

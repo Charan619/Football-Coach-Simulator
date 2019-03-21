@@ -9,7 +9,7 @@ int main()
     cout << "Football Simulator 2019" << endl;
     Team *t;
     int i=0;
-    t=new Team[10]{{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i}};
+    t=new Team[2]{{++i},{++i}};
 
     return 0;
 }

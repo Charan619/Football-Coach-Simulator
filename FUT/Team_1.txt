@@ -1,5 +1,8 @@
 FC Barcelona
 BAR
-KRC 1 88 23 23 32 78 89
-Messi 1 89 90 86 95 26 61
-Suarez 1 82 90 79 86 42 81
+L.Messi 1 89 90 86 95 26 61
+L.Suarez 1 82 90 79 86 42 81
+S.Busquets 2 51 62 80 81 86 80
+M.terStegan 4 87 85 88 90 38 85
+S.Umtiti 3 72 64 71 72 88 82
+Pique 3 55 61 69 66 87 76
