@@ -2,7 +2,7 @@
 #define USER_H
 
 #include "Match.h"
-
+#include "Team.h"
 
 class User : public Match
 {

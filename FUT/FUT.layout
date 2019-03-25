@@ -2,24 +2,30 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="Match.cpp" open="1" top="1" tabpos="7">
-		<Cursor position="106" topLine="0" />
+		<Cursor position="116" topLine="25" />
 	</File>
 	<File name="Match.h" open="1" top="0" tabpos="6">
-		<Cursor position="215" topLine="0" />
+		<Cursor position="483" topLine="0" />
 	</File>
 	<File name="Player.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="80" topLine="0" />
 	</File>
 	<File name="Player.h" open="1" top="0" tabpos="1">
-		<Cursor position="984" topLine="20" />
+		<Cursor position="289" topLine="20" />
 	</File>
 	<File name="Team.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="1153" topLine="3" />
+		<Cursor position="1365" topLine="58" />
 	</File>
 	<File name="Team.h" open="1" top="0" tabpos="4">
-		<Cursor position="1744" topLine="26" />
+		<Cursor position="2010" topLine="43" />
+	</File>
+	<File name="User.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="User.h" open="1" top="0" tabpos="8">
+		<Cursor position="71" topLine="2" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="192" topLine="0" />
+		<Cursor position="239" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

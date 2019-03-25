@@ -1,7 +1,9 @@
 #include "User.h"
 
+
 User::User(int user_id)
 {
+    user_name=new char[20];
     this->user_id=user_id;
     cout<<"Enter your Manager Name"<<endl;
     gets(user_name);

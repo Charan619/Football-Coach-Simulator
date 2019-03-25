@@ -11,7 +11,7 @@ class Player
         Player();
         char *Getname(){return name;}
         void Set_name(char *str){strcpy(name,str);}
-        float Gettype(){return type;}
+        int Gettype(){return type;}
         void Settype(int val){type=val;}
         float Getpac() { return pac; }
         void Setpac(float val) { pac = val; }

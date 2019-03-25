@@ -42,6 +42,7 @@ class Team
         void Set_attack_width(int val) { attack_width= val; }
         int Get_defence_width() { return defence_width; }
         void Set_defence_width(int val) { defence_width= val; }
+        Player player(int val){return p[val];}
     protected:
         char *team_name;
         char *team_code;

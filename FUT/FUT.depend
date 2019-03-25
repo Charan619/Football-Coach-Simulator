@@ -23,28 +23,29 @@
 1553116446 source:c:\users\admin\desktop\fut\player.cpp
 	"Player.h"
 
-1553072245 source:z:\fut\team.cpp
+1553511764 source:z:\fut\team.cpp
 	"Team.h"
 	"Player.h"
 
-1553071935 z:\fut\team.h
+1553515072 z:\fut\team.h
 	"Player.h"
 	<iostream>
 	<fstream>
 	<string.h>
 
-1553071980 z:\fut\player.h
+1553513195 z:\fut\player.h
 	<iostream>
 	<fstream>
 	<string.h>
 	<stdlib.h>
 
-1553072127 source:z:\fut\main.cpp
+1553513477 source:z:\fut\main.cpp
 	"Player.h"
 	"Team.h"
+	"User.h"
 	<iostream>
 
-1553070131 source:z:\fut\player.cpp
+1553511764 source:z:\fut\player.cpp
 	"Player.h"
 
 1553194567 source:c:\users\admin\desktop\fut\user.cpp
@@ -57,4 +58,19 @@
 	"Team.h"
 	<stdlib.h>
 	<time.h>
+
+1553513611 source:z:\fut\user.cpp
+	"User.h"
+
+1553512878 z:\fut\user.h
+	"Match.h"
+	"Team.h"
+
+1553511761 z:\fut\match.h
+	"Team.h"
+	<stdlib.h>
+	<time.h>
+
+1553516484 source:z:\fut\match.cpp
+	"Match.h"
 
