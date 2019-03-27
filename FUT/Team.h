@@ -24,15 +24,15 @@ class Team
         void Setdraw(int val) { draw = val; }
         int Getloss() { return loss; }
         void Setloss(int val) { loss = val; }
-        int Getgoals_for() { return goals_for; }
-        void Setgoals_for(int val) { goals_for = val; }
+        */int Getgoals_for() { return goals_for; }
+        void inc_goals_for() { goals_for++; }
         int Getgoals_against() { return goals_against; }
-        void Setgoals_against(int val) { goals_against = val; }
+        void inc_goals_against() { goals_against++; }
         int Getgoals_diff() { return goals_diff; }
         void Setgoals_diff(int val) { goals_diff = val; }
         int Getmatches() { return matches; }
-        void Setmatches(int val) { matches = val; }
-        int Getstart11[11]() { return start11[11]; }
+        void inc_matches() { matches++; }
+        /*int Getstart11[11]() { return start11[11]; }
         void Setstart11[11](int val) { start11[11] = val; }*/
         int Get_attack_style() { return attack_style; }
         void Set_attack_style(int val) { attack_style = val; }

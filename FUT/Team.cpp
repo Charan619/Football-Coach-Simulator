@@ -4,9 +4,14 @@
 Team::Team(int no)
 {
     pts=0,wins=0,loss=0,goals_for=0,goals_against=0,goals_diff=0,goals_for=0;
+    cout<<"works";
     p=new Player[17];
     team_code=new char[20];
     team_name=new char[20];
+    for(int i=0;i<11;i++)
+    {
+        start11[i]=i;
+    }
     fstream file_obj2;
 /*
     Player obj;
@@ -30,6 +35,7 @@ Team::Team(int no)
     int i=-1;
     char file_name[20]="Team_";
     char file_no[5];
+    cout<<"ok";
     itoa(no,file_no,10);
     cout<<"hi";
     strcat(file_name,file_no);
@@ -71,7 +77,8 @@ Team::Team(int no)
         file_obj2>>u;
         p[i].Setphy(u);
         //file_obj2.read((char*)&obj2, sizeof(obj2));
-
+        cout<<p[i].Getpac();
+        cout<<p[i].Getname()<<endl;
     }
     file_obj2.close();
     //p[i].Set_name(obj2.Getname());
@@ -82,8 +89,7 @@ Team::Team(int no)
     p[i].def=obj.def
     p[i].pas=obj.pas;
     p[i].phy=obj.phy;*/
-    cout<<p[i].Gettype()<<p[i].Getpac();
-    cout<<p[i].Getname();
+
     //Setteam_name("Beast FC");
     cout<<Getteam_name();
     }

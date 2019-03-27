@@ -1,15 +1,18 @@
 #include "Match.h"
-
+#include <time.h>
 
 Match::Match()
 {
     game_week=0;
 }
 
-void Match::Game(Team &t1,Team &t2)
+void Match::Game(Team t1,Team t2)
 {
+    t1.inc_matches();
+    t2.inc_matches();
+    fflush(stdin);
     float t1_att=0,t1_def=0,t2_def=0,t2_att=0;
-    for(int i=0;i<5;i++)
+    for(int i=0;i<6;i++)
     {
         switch(t1.player(i).Gettype())
         {
@@ -34,6 +37,7 @@ void Match::Game(Team &t1,Team &t2)
             case 1:t2_att+=(t2.player(i).Getpac()+t2.player(i).Getdri()+t2.player(i).Getsho());break;
             case 2:
                     {
+                        cout<<"Mid";
                         t2_att+=0.5*(t2.player(i).Getpac()+t2.player(i).Getdri()+t2.player(i).Getsho()+t2.player(i).Getphy()+t2.player(i).Getpas());
                         t2_def+=0.5*(t2.player(i).Getpac()+t2.player(i).Getdri()+t2.player(i).Getdef()+t2.player(i).Getphy()+t2.player(i).Getpas());
                         break;
@@ -42,6 +46,57 @@ void Match::Game(Team &t1,Team &t2)
 
         }
         cout<<t2_att<<" "<<t2_def<<endl;
+    }
+
+    int a1=0,b1=0,att,def;
+    int fl=0,t=0,padding=1280;
+    srand (time(0));
+    while(t!=90)
+    {
+        //initialize random seed:
+
+        if(t%10==5)
+        {
+            att=t1_att;
+            def=t2_def;
+            fl=1;
+        }
+        else
+        {
+            att=t2_att;
+            def=t1_def;
+            fl=2;
+        }
+        int c=att+def+padding;
+        //generate secret number between 1 and 10:
+        int r=rand() % c + 1;
+        int time=(rand() % 5 )+ t;
+        if(fl==1&&r<att)
+        {
+            a1++;
+            t1.inc_goals_for();
+            t2.inc_goals_against();
+            fl=3;
+        }
+        if(fl==2&&r<att)
+        {
+            b1++;
+            t2.inc_goals_for();
+            t1.inc_goals_against();
+            fl=3;
+        }
+        //if(r>c-def)
+        //{
+          //  b1++;
+            //fl=2;
+        //}
+        cout<<a1<<" : "<<b1;
+        if(fl==3)
+            cout<<" '"<<time;
+        cout<<endl;
+        t+=5;
+        padding-=5;
+        fl=0;
     }
 
 

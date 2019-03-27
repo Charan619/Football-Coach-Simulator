@@ -1,41 +1,44 @@
 # depslib dependency file v1.0
-1553578479 source:c:\users\tc\desktop\fut\main.cpp
+1553671665 source:z:\oops\fut\player.cpp
 	"Player.h"
-	"Team.h"
-	"User.h"
-	<iostream>
 
-1553578161 c:\users\tc\desktop\fut\player.h
+1553671665 z:\oops\fut\player.h
 	<iostream>
 	<fstream>
 	<string.h>
 	<stdlib.h>
 
-1553577791 c:\users\tc\desktop\fut\team.h
+1553679138 source:z:\oops\fut\team.cpp
+	"Team.h"
+	"Player.h"
+
+1553677337 z:\oops\fut\team.h
 	"Player.h"
 	<iostream>
 	<fstream>
 	<string.h>
 
-1553577792 c:\users\tc\desktop\fut\user.h
+1553679924 source:z:\oops\fut\user.cpp
+	"User.h"
+
+1553671665 z:\oops\fut\user.h
 	"Match.h"
 	"Team.h"
 
-1553577791 c:\users\tc\desktop\fut\match.h
+1553675079 z:\oops\fut\match.h
 	"Team.h"
 	<stdlib.h>
 	<time.h>
 
-1553581625 source:c:\users\tc\desktop\fut\match.cpp
-	"Match.h"
-
-1553577791 source:c:\users\tc\desktop\fut\player.cpp
+1553680014 source:z:\oops\fut\main.cpp
 	"Player.h"
-
-1553579146 source:c:\users\tc\desktop\fut\team.cpp
 	"Team.h"
-	"Player.h"
-
-1553577792 source:c:\users\tc\desktop\fut\user.cpp
 	"User.h"
+	"Match.h"
+	<iostream>
+	<fstream>
+
+1553679138 source:z:\oops\fut\match.cpp
+	"Match.h"
+	<time.h>
 
