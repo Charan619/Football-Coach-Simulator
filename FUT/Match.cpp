@@ -12,8 +12,9 @@ void Match::Game(Team t1,Team t2)
     t2.inc_matches();
     fflush(stdin);
     float t1_att=0,t1_def=0,t2_def=0,t2_att=0;
-    for(int i=0;i<6;i++)
+    for(int j=0;j<6;j++)
     {
+        int i=t1.get_start11(j);
         switch(t1.player(i).Gettype())
         {
 
@@ -30,7 +31,7 @@ void Match::Game(Team t1,Team t2)
         cout<<t1_att<<" "<<t1_def<<endl;
         cout<<t2.player(i).Getname()<<t2.player(i).Getpac();
 
-
+        i=t2.get_start11(j);
         switch(t2.player(i).Gettype())
         {
 

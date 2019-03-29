@@ -19,7 +19,7 @@ int main()
     if(opt==1)
     {
         file_obj.open("user_count.txt",ios::out);
-            file_obj<<user_count++;
+            file_obj<<++user_count;
         User u(user_count);
     }
     return 0;

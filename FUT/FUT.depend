@@ -42,3 +42,46 @@
 	"Match.h"
 	<time.h>
 
+1553635266 source:g:\fut\player.cpp
+	"Player.h"
+
+1553635266 g:\fut\player.h
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdlib.h>
+
+1553635266 source:g:\fut\team.cpp
+	"Team.h"
+	"Player.h"
+
+1553782187 g:\fut\team.h
+	"Player.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1553635266 source:g:\fut\user.cpp
+	"User.h"
+
+1553635266 g:\fut\user.h
+	"Match.h"
+	"Team.h"
+
+1553635266 g:\fut\match.h
+	"Team.h"
+	<stdlib.h>
+	<time.h>
+
+1553779809 source:g:\fut\main.cpp
+	"Player.h"
+	"Team.h"
+	"User.h"
+	"Match.h"
+	<iostream>
+	<fstream>
+
+1553782187 source:g:\fut\match.cpp
+	"Match.h"
+	<time.h>
+

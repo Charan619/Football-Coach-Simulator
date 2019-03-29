@@ -32,8 +32,8 @@ class Team
         void Setgoals_diff(int val) { goals_diff = val; }
         int Getmatches() { return matches; }
         void inc_matches() { matches++; }
-        /*int Getstart11[11]() { return start11[11]; }
-        void Setstart11[11](int val) { start11[11] = val; }*/
+        int get_start11(int val) { return start11[val]; }
+        //void Setstart11[11](int val) { start11[11] = val; }
         int Get_attack_style() { return attack_style; }
         void Set_attack_style(int val) { attack_style = val; }
         int Get_defence_style() { return defence_style; }
