@@ -14,11 +14,14 @@ class User : public Match
         void Setuser_id(int val) { user_id = val; }
         char* Getuser_name() { return user_name; }
         void Setuser_name(char* val) { user_name = val; }
+        void load_table();
+        void save_table();
     protected:
     private:
         int team_id;
         int user_id;
         char* user_name;
+        int schedule[10][9];
 };
 
 #endif // USER_H

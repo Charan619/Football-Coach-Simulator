@@ -1,18 +1,18 @@
 # depslib dependency file v1.0
-1553671665 source:z:\oops\fut\player.cpp
+1553832644 source:z:\oops\fut\player.cpp
 	"Player.h"
 
-1553671665 z:\oops\fut\player.h
+1553832644 z:\oops\fut\player.h
 	<iostream>
 	<fstream>
 	<string.h>
 	<stdlib.h>
 
-1553679138 source:z:\oops\fut\team.cpp
+1553832644 source:z:\oops\fut\team.cpp
 	"Team.h"
 	"Player.h"
 
-1553677337 z:\oops\fut\team.h
+1553832644 z:\oops\fut\team.h
 	"Player.h"
 	<iostream>
 	<fstream>
@@ -25,7 +25,7 @@
 	"Match.h"
 	"Team.h"
 
-1553675079 z:\oops\fut\match.h
+1553832644 z:\oops\fut\match.h
 	"Team.h"
 	<stdlib.h>
 	<time.h>
@@ -38,7 +38,7 @@
 	<iostream>
 	<fstream>
 
-1553679138 source:z:\oops\fut\match.cpp
+1553832644 source:z:\oops\fut\match.cpp
 	"Match.h"
 	<time.h>
 

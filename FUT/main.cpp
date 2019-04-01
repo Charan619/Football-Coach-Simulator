@@ -22,5 +22,10 @@ int main()
             file_obj<<++user_count;
         User u(user_count);
     }
+    if(opt==2)
+    {
+
+    }
     return 0;
+
 }
