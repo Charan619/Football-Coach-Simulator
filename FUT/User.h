@@ -7,7 +7,7 @@
 class User : public Match
 {
     public:
-        User(int);
+        User(int.int);
         int Getteam_id() { return team_id; }
         void Setteam_id(int val) { team_id = val; }
         int Getuser_id() { return user_id; }

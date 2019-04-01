@@ -20,11 +20,11 @@ int main()
     {
         file_obj.open("user_count.txt",ios::out);
             file_obj<<++user_count;
-        User u(user_count);
+        User u(user_count,opt);
     }
     if(opt==2)
     {
-
+        User u(user_count,opt);
     }
     return 0;
 

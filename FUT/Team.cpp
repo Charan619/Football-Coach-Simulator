@@ -56,6 +56,8 @@ Team::Team(int no)
         file_obj2>>name;
         p[i].Set_name(name);
 
+        fflush(stdin);
+
         file_obj2>>u;
         p[i].Settype(u);
 
@@ -76,9 +78,11 @@ Team::Team(int no)
 
         file_obj2>>u;
         p[i].Setphy(u);
+
         //file_obj2.read((char*)&obj2, sizeof(obj2));
         cout<<p[i].Getpac();
-        cout<<p[i].Getname()<<endl;
+        //cout<<p[i].Getname()<<endl;
+        //fflush(stdout);
     }
     file_obj2.close();
     //p[i].Set_name(obj2.Getname());
@@ -91,5 +95,5 @@ Team::Team(int no)
     p[i].phy=obj.phy;*/
 
     //Setteam_name("Beast FC");
-    cout<<Getteam_name();
+    //cout<<Getteam_name();
     }
