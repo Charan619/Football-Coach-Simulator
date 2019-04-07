@@ -6,12 +6,13 @@ Match::Match()
     game_week=0;
 }
 
-void Match::Game(Team t1,Team t2)
+void Match::Game(Team &t1,Team &t2)
 {
     t1.inc_matches();
     t2.inc_matches();
     fflush(stdin);
     float t1_att=0,t1_def=0,t2_def=0,t2_att=0;
+    //calculating att and def of both teams
     for(int j=0;j<6;j++)
     {
         int i=t1.get_start11(j);
@@ -51,10 +52,10 @@ void Match::Game(Team t1,Team t2)
 
     int a1=0,b1=0,att,def;
     int fl=0,t=0,padding=1280;
-    srand (time(0));
+
+//simming game
     while(t!=90)
     {
-        //initialize random seed:
 
         if(t%10==5)
         {
@@ -69,7 +70,7 @@ void Match::Game(Team t1,Team t2)
             fl=2;
         }
         int c=att+def+padding;
-        //generate secret number between 1 and 10:
+        //generating rand no
         int r=rand() % c + 1;
         int time=(rand() % 5 )+ t;
         if(fl==1&&r<att)
@@ -99,6 +100,24 @@ void Match::Game(Team t1,Team t2)
         padding-=5;
         fl=0;
     }
-
+    if (a1>b1)
+    {
+        t1.Setpts(t1.Getpts()+3);
+        t1.Setwin(t1.Getwin()+1);
+        t2.Setloss(t2.Getloss()+1);
+    }
+    else if (a1<b1)
+    {
+        t2.Setpts(t2.Getpts()+3);
+        t2.Setwin(t2.Getwin()+1);
+        t1 .Setloss(t1.Getloss()+1);
+    }
+    else
+    {
+        t1.Setpts(t1.Getpts()+1);
+        t2.Setpts(t2.Getpts()+1);
+        t2.Setdraw(t2.Getdraw()+1);
+        t1 .Setdraw(t1.Getdraw()+1);
+    }
 
 }
