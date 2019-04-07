@@ -21,3 +21,12 @@ AW of team 1 and DW of team 2:(1 is widest)
 -1,2, *1.2
 -3,2, *1.2
 -both 2,*1.3 def
+
+
+-Loading game
+-unique manager name
+-player database filling
+-adding tact settings and changing starting 11(adding switch case for goalie type'4')(checking if goalie is also in lineup)
+-time delay setting while simming match
+-ui/gui?
+-multiple seasons?
