@@ -1,6 +1,8 @@
 # footy-simulator
 Football season simulator using cpp
-TODO:
+
+
+            TODO:
 --Tactical Settings--
 Attack style and Defence style-1,2,3(1 is least aggressive)
 if AS of team 1 and DS of team 2:
@@ -24,7 +26,7 @@ AW of team 1 and DW of team 2:(1 is widest)
 
 
 -Loading game
--unique manager name
+-checking if manager name is unique
 -player database filling
 -adding tact settings and changing starting 11(adding switch case for goalie type'4')(checking if goalie is also in lineup)
 -time delay setting while simming match
