@@ -26,24 +26,49 @@ User::User(int user_id,int load)
     //round robin schedule (each row is a game week,i vs i+1 coloumn)
     int sch[9][10]={{2,1,3,10,4,9,5,8,6,7},{2,3,1,7,8,6,9,5,10,4},{6,9,7,8,3,1,4,2,5,10},{10,6,2,5,3,4,1,8,9,7},{5,3,6,2,7,10,8,9,4,1},{1,9,10,8,2,7,3,6,4,5},{5,1,6,4,7,3,8,2,9,10},{5,6,1,10,2,9,3,8,4,7},{9,3,10,2,6,1,7,5,8,4}};
     Team *t;
+    char file_name[30]="User_";
+    int j=0;
+
+
+    cout<<"team created";
+    int i=0;
+    t=new Team[10]{{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i}};
     if(load==1)
     {
-        cout<<"team created";
-        int i=0;
-        t=new Team[10]{{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i},{++i}};
         cout<<"HAI"<<endl;
         user_name=new char[20];
         this->user_id=user_id;
         fflush(stdin);
-        cout<<"Enter your Manager Name"<<endl;
-        gets(user_name);
+        int fl=1;
+        while(fl==1)
+        {
+            fl=0;
+            cout<<"Enter your Manager Name"<<endl;
+            gets(user_name);
+            ifstream user_table;
+            user_table.open("usertable.txt");
+            int num;
+            char name[20];
+            while(!user_table.eof())
+            {
+                user_table>>num;
+                user_table>>name;
+                user_table>>num;
+                if(strcmpi(name,user_name)==0)
+                {
+                    cout<<"Try again";
+                    fl=1;
+                    break;
+                }
+            }
+        }
         cout<<"Pick a team ";
         puts(user_name);
         cout<<endl<<"1.FC Barcelona"<<endl<<"2.Real Madrid";
         cin>>team_id;
         team_id--;
         cout<<t[team_id].Getteam_name()<<endl;
-        char file_name[30]="User_";
+
         char file_no[5];
         cout<<"ok";
         itoa(user_id,file_no,10);
@@ -58,29 +83,96 @@ User::User(int user_id,int load)
         user_table.open("usertable.txt",ios::app);
         user_table<<user_id<<" "<<user_name<<" "<<team_id<<"\n";
         user_table.close();
-
-        int j=0;
-        for(j=0;j<10;j++)
+    }
+char user_name[20];
+    if(load==2)
+    {
+        cout<<"Enter your username";
+        int num,fl=0;
+        char name[20];
+        fflush(stdin);
+        cout<<"ok";
+        gets(user_name);
+        ifstream user_table;
+        user_table.open("usertable.txt");
+        while(fl==0)
         {
-            for(int i=0;i<10;i+=2)
+            while(!user_table.eof())
             {
-                cout<<sch[j][i]<<"-"<<sch[j][i+1]<<"\n";
-                Game(t[sch[j][i]-1],t[sch[j][i+1]-1]);              //simming game
+                user_table>>num;
+                user_table>>name;
+                user_table>>num;
+                if(strcmpi(name,user_name)==0)
+                {
+                    cout<<"Successful match";
+                    fl=1;
+                    break;
+                }
             }
-            TableWrite(t,file_name);                            //writing table every gameweek
-            //file_obj.open(file_name,ios::in|ios::out);
-            cout<<"Gameweek "<<j+1<<" over.\nEnter 1 to exit";
-            int opt1=0;
-            cin>>opt1;
-            if(opt1==1)
-                break;
+            cout<<"Username does not exist\n";
         }
+        user_table.close();
 
-        //need to create pts table
+        strcat(file_name,user_name);
+        strcat(file_name,".txt");
+        cout<<file_name;
+        cout<<"file name made\n";
+        ifstream fin;
+        fin.open(file_name);
+        int t_no=-1;
+        while(!fin.eof())
+        {
+            t_no++;
+            fin>>num;
+            t[t_no].Setpts(num);
+
+            fin>>num;
+            t[t_no].Setwin(num);
+
+            fin>>num;
+            t[t_no].Setdraw(num);
+
+            fin>>num;
+            t[t_no].Setloss(num);
+
+            fin>>num;
+            t[t_no].Setgoals_for(num);
+
+            fin>>num;
+            t[t_no].Setgoals_against(num);
+        }
+        fin.close();
+
+        fin.open(file_name);
+
+
+        fin>>num;
+        int gm=0;
+        for(int i=0;i<3;i++)
+        {
+            fin>>num;
+            gm+=num;
+        }
+        j=gm;
 
     }
+    cout<<"gm="<<j;
 
+    for(j;j<9;j++)
+    {
+        for(int i=0;i<10;i+=2)
+        {
+            cout<<sch[j][i]<<"-"<<sch[j][i+1]<<"\n";
+            Game(t[sch[j][i]-1],t[sch[j][i+1]-1]);              //simming game
+        }
+        TableWrite(t,file_name);                            //writing table every gameweek
+        //file_obj.open(file_name,ios::in|ios::out);
+        cout<<"Gameweek "<<j+1<<" over.\nEnter 1 to exit";
+        int opt1=0;
+        cin>>opt1;
+        if(opt1==1)
+            break;
+    }
 
-        //for(int i=0;i<)
-
+        //need to create pts table
 }

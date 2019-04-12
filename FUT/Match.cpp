@@ -27,7 +27,7 @@ void Match::Game(Team &t1,Team &t2)
                         break;
                     }
             case 3:t1_def+=(t1.player(i).Getphy()+t1.player(i).Getdef()+t1.player(i).Getpas());break;
-
+            case 4:t1_def+=(t1.player(i).Getpac()+t1.player(i).Getdri()+t1.player(i).Getphy());break;
         }
         cout<<t1_att<<" "<<t1_def<<endl;
         cout<<t2.player(i).Getname()<<t2.player(i).Getpac();
@@ -45,13 +45,13 @@ void Match::Game(Team &t1,Team &t2)
                         break;
                     }
             case 3:t2_def+=(t2.player(i).Getphy()+t2.player(i).Getdef()+t2.player(i).Getpas());break;
-
+            case 4:t2_def+=(t2.player(i).Getpac()+t2.player(i).Getdri()+t2.player(i).Getphy());break;
         }
         cout<<t2_att<<" "<<t2_def<<endl;
     }
 
     int a1=0,b1=0,att,def;
-    int fl=0,t=0,padding=1280;
+    int fl=0,t=0,padding=1080;
 
 //simming game
     while(t!=90)
