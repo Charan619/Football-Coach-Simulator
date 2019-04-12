@@ -25,10 +25,10 @@ AW of team 1 and DW of team 2:(1 is widest)
 -both 2,*1.3 def
 
 
--Loading game
--checking if manager name is unique
--player database filling
--adding tact settings and changing starting 11(adding switch case for goalie type'4')(checking if goalie is also in lineup)
+-Loading game(done)
+-checking if manager name is unique(done)
+-player database filling in notepad
+-adding tact settings and changing starting 11(checking if goalie is also in lineup)
 -time delay setting while simming match
 -ui/gui?
 -multiple seasons?
