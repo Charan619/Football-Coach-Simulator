@@ -94,7 +94,7 @@
 	<string.h>
 	<stdlib.h>
 
-1554534137 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.cpp
+1555183182 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.cpp
 	"Team.h"
 	"Player.h"
 
@@ -104,11 +104,12 @@
 	<fstream>
 	<string.h>
 
-1554664467 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.cpp
+1555184174 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.cpp
 	"User.h"
 
-1554571355 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.h
+1555183182 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.h
 	"Match.h"
+	"Manage.h"
 	"Team.h"
 
 1554574165 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.h
@@ -125,7 +126,10 @@
 	<iostream>
 	<fstream>
 
-1554664467 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.cpp
+1554745754 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.cpp
 	"Match.h"
 	<time.h>
+
+1555183182 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\manage.h
+	"Team.h"
 

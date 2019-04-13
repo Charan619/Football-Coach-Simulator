@@ -28,6 +28,7 @@ User::User(int user_id,int load)
     Team *t;
     char file_name[30]="User_";
     int j=0;
+    int team_id;
 
 
     cout<<"team created";
@@ -105,6 +106,7 @@ char user_name[20];
                 if(strcmpi(name,user_name)==0)
                 {
                     cout<<"Successful match";
+                    team_id=num;
                     fl=1;
                     break;
                 }
@@ -157,6 +159,8 @@ char user_name[20];
 
     }
     cout<<"gm="<<j;
+
+    showTeam(t[team_id],team_id);
 
     for(j;j<9;j++)
     {

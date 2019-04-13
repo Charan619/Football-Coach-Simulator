@@ -2,9 +2,10 @@
 #define USER_H
 
 #include "Match.h"
+#include "Manage.h"
 #include "Team.h"
 
-class User : public Match
+class User : public Match,public Manage
 {
     public:
         User(int,int);

@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Manage.cpp" />
+		<Unit filename="Manage.h" />
 		<Unit filename="Match.cpp" />
 		<Unit filename="Match.h" />
 		<Unit filename="Player.cpp" />

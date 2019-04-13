@@ -26,3 +26,4 @@
 2 mfgg 2
 3 work 1
 4 endgame 3
+5 hmm 1
