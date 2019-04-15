@@ -27,11 +27,21 @@ AW of team 1 and DW of team 2:(1 is widest)
 
 -Loading game(done)
 -checking if manager name is unique(done)
--player database filling (IN NOTEPAD)
+-player database filling IN NOTEPAD
 -Manager home page(MENU for after user is created)
 -adding tact settings and changing starting 11(checking if goalie is also in lineup)
--showTable
+-showTable(done)
 -time delay setting while simming match
 -optimize simming(inc weightage to def?)(reduce no of goals scored)(teams w similar stats should usually draw)
 -ui/gui?
 -multiple seasons?
+
+
+MENU
+-showTeam
+-showTable
+-change tactics(att&def wid&style)
+-sim game
+
+-close
+
