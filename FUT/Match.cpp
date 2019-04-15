@@ -1,5 +1,12 @@
 #include "Match.h"
 #include <time.h>
+#include<time.h>
+
+void delay(unsigned int mseconds)
+{
+    clock_t goal = mseconds + clock();
+    while (goal > clock());
+}
 
 Match::Match()
 {
@@ -8,6 +15,7 @@ Match::Match()
 
 void Match::Game(Team &t1,Team &t2)
 {
+    system("cls");
     t1.inc_matches();
     t2.inc_matches();
     fflush(stdin);
@@ -50,12 +58,118 @@ void Match::Game(Team &t1,Team &t2)
         cout<<t2_att<<" "<<t2_def<<endl;
     }
 
+    int mod=1;
+
+    if(t1.Get_attack_style()!=t2.Get_defence_style())
+    {
+        if(t1.Get_attack_style()==1)
+        {
+            if(t2.Get_defence_style()==3)
+                mod=1.4;
+            if(t2.Get_defence_style()==2)
+                mod=1.2;
+        }
+
+        else if(t1.Get_attack_style()==3)
+        {
+            if(t2.Get_defence_style()==1)
+                mod=1.4;
+            if(t2.Get_defence_style()==2)
+                mod=1.2;
+        }
+
+        else if(t1.Get_attack_style()==2)
+            mod=1.2;
+    }
+    t1_att*=mod;
+
+    mod=1;
+
+    if(t2.Get_attack_style()!=t1.Get_defence_style())
+    {
+        if(t2.Get_attack_style()==1)
+        {
+            if(t1.Get_defence_style()==3)
+                mod=1.4;
+            if(t1.Get_defence_style()==2)
+                mod=1.2;
+        }
+
+        else if(t2.Get_attack_style()==3)
+        {
+            if(t1.Get_defence_style()==1)
+                mod=1.4;
+            if(t1.Get_defence_style()==2)
+                mod=1.2;
+        }
+
+        else if(t2.Get_attack_style()==2)
+            mod=1.2;
+    }
+    t2_att*=mod;
+
+    mod=1;
+    if(t1.Get_attack_width()==1)
+    {
+        if(t2.Get_defence_width()==1)
+            mod=1.4;
+        else if(t2.Get_defence_width()==2)
+            mod=1.2;
+    }
+    else if(t1.Get_attack_width()==3)
+    {
+        if(t2.Get_defence_width()==3)
+            mod=1.4;
+        else if(t2.Get_defence_width()==2)
+            mod=1.2;
+    }
+    else
+    {
+        if(t2.Get_defence_width()==2)
+            mod=1.3;
+        else
+            mod=1.2;
+    }
+    t1_def*=mod;
+
+    mod=1;
+    if(t2.Get_attack_width()==1)
+    {
+        if(t1.Get_defence_width()==1)
+            mod=1.4;
+        else if(t1.Get_defence_width()==2)
+            mod=1.2;
+    }
+    else if(t2.Get_attack_width()==3)
+    {
+        if(t1.Get_defence_width()==3)
+            mod=1.4;
+        else if(t1.Get_defence_width()==2)
+            mod=1.2;
+    }
+    else
+    {
+        if(t1.Get_defence_width()==2)
+            mod=1.3;
+        else
+            mod=1.2;
+    }
+    t2_def*=mod;
+
+
+
+
+
+
+
+    system("pause");
     int a1=0,b1=0,att,def;
-    int fl=0,t=0,padding=1080;
+    int fl=0,t=0,padding=1380;
 
 //simming game
     while(t!=90)
     {
+
 
         if(t%10==5)
         {
@@ -92,10 +206,19 @@ void Match::Game(Team &t1,Team &t2)
           //  b1++;
             //fl=2;
         //}
-        cout<<a1<<" : "<<b1;
-        if(fl==3)
-            cout<<" '"<<time;
-        cout<<endl;
+        int dly=0;
+        while(dly!=5)
+        {
+            system("cls");
+            delay(200);
+            cout<<t+dly<<endl;
+            cout<<a1<<" : "<<b1;
+            if(fl==3&&t+dly==t)
+                cout<<"\nGOALLL!!"<<"  ' "<<t;
+            cout<<endl;
+            dly++;
+
+        }
         t+=5;
         padding-=5;
         fl=0;
@@ -119,5 +242,7 @@ void Match::Game(Team &t1,Team &t2)
         t2.Setdraw(t2.Getdraw()+1);
         t1 .Setdraw(t1.Getdraw()+1);
     }
+    t1.Setgoals_diff(t1.Getgoals_for()-t1.Getgoals_against());
+    t2.Setgoals_diff(t2.Getgoals_for()-t2.Getgoals_against());
 
 }

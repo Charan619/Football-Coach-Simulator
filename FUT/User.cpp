@@ -27,6 +27,7 @@ User::User(int user_id,int load)
     int sch[9][10]={{2,1,3,10,4,9,5,8,6,7},{2,3,1,7,8,6,9,5,10,4},{6,9,7,8,3,1,4,2,5,10},{10,6,2,5,3,4,1,8,9,7},{5,3,6,2,7,10,8,9,4,1},{1,9,10,8,2,7,3,6,4,5},{5,1,6,4,7,3,8,2,9,10},{5,6,1,10,2,9,3,8,4,7},{9,3,10,2,6,1,7,5,8,4}};
     Team *t;
     char file_name[30]="User_";
+    char user_name[20];
     int j=0;
     int team_id;
 
@@ -37,7 +38,7 @@ User::User(int user_id,int load)
     if(load==1)
     {
         cout<<"HAI"<<endl;
-        user_name=new char[20];
+        //user_name=new char[20];
         this->user_id=user_id;
         fflush(stdin);
         int fl=1;
@@ -85,19 +86,23 @@ User::User(int user_id,int load)
         user_table<<user_id<<" "<<user_name<<" "<<team_id<<"\n";
         user_table.close();
     }
-char user_name[20];
+
+
     if(load==2)
     {
-        cout<<"Enter your username";
-        int num,fl=0;
-        char name[20];
-        fflush(stdin);
-        cout<<"ok";
-        gets(user_name);
-        ifstream user_table;
-        user_table.open("usertable.txt");
+        int fl=0;
+        int num;
+        fstream user_table;
         while(fl==0)
         {
+            cout<<"Enter your username";
+            char name[20];
+            fflush(stdin);
+            cout<<"ok";
+            gets(user_name);
+
+            user_table.open("usertable.txt");
+
             while(!user_table.eof())
             {
                 user_table>>num;
@@ -111,7 +116,11 @@ char user_name[20];
                     break;
                 }
             }
-            cout<<"Username does not exist\n";
+            if(fl==0)
+            {
+                cout<<"Username does not exist,try again\n ";
+                user_table.close();
+            }
         }
         user_table.close();
 
@@ -160,23 +169,27 @@ char user_name[20];
     }
     cout<<"gm="<<j;
 
-    showTeam(t[team_id],team_id);
+    //showTeam(t[team_id],team_id);
+    //showTable(t);
+    cout<<"Welcome Manager "<<user_name;
+    //changeStart11(t[team_id],team_id);
+    //while(opt1!=0)
+    //{
+        //cout<<" "
 
-    for(j;j<9;j++)
-    {
-        for(int i=0;i<10;i+=2)
-        {
-            cout<<sch[j][i]<<"-"<<sch[j][i+1]<<"\n";
-            Game(t[sch[j][i]-1],t[sch[j][i+1]-1]);              //simming game
-        }
-        TableWrite(t,file_name);                            //writing table every gameweek
+
+
+
+
+            for(int i=0;i<10;i+=2)
+            {
+                cout<<sch[j][i]<<"-"<<sch[j][i+1]<<"\n";
+                Game(t[sch[j][i]-1],t[sch[j][i+1]-1]);              //simming game
+                system("pause");
+            }
+            TableWrite(t,file_name);                            //writing table every gameweek
         //file_obj.open(file_name,ios::in|ios::out);
-        cout<<"Gameweek "<<j+1<<" over.\nEnter 1 to exit";
-        int opt1=0;
-        cin>>opt1;
-        if(opt1==1)
-            break;
-    }
+            cout<<"Gameweek "<<j+1<<" over.\n";
+    showTable(t);
 
-        //need to create pts table
 }

@@ -53,6 +53,7 @@ class Team
         void Set_attack_width(int val) { attack_width= val; }
         int Get_defence_width() { return defence_width; }
         void Set_defence_width(int val) { defence_width= val; }
+        int start11[11];
         Player player(int val){return p[val];}
     protected:
         char *team_name;
@@ -66,7 +67,7 @@ class Team
         int goals_against;
         int goals_diff;
         int matches;
-        int start11[11];
+
         int attack_style;
         int defence_style;
         int attack_width;

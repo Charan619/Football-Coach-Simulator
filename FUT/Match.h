@@ -1,5 +1,7 @@
 #ifndef MATCH_H
 #define MATCH_H
+#include<dos.h>
+#include<stdlib.h>
 #include "Team.h"
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */

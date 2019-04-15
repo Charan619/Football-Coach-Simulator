@@ -7,9 +7,13 @@ class Manage
     public:
         Manage();
         void showTeam(Team &,int );
-        void showTable(char *file_name);
-        void changeStart11(Team&);
-
+        void showTable(Team *);
+        void changeStart11(Team&,int);
+        /*void changeAttWidth(Team&,int);
+        void changeAttStyle(Team&,int);
+        void changeDefWidth(Team&,int);
+        void changeDefStyle(Team&,int);
+        */
     protected:
     private:
 };
