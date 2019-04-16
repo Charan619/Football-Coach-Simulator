@@ -1,8 +1,18 @@
 Bayern Munich
 BAY
-S.Ramos 3 75 63 71 72 91 84
-L.Modric 2 76 76 90 91 70 67
-T.Courtois 4 87 91 74 88 46 87
-T.Kroos 2 67 82 89 82 74 69
-Isco 1 72 81 85 92 61 62
-Lulba 3 32 12 45 53 12 44
+M.Neuer 4 91 88 91 88 54 88
+R.Lewandowski 1 78 89 75 85 41 82
+M.Hummels 3 65 58 76 73 90 76
+J.Rodriguez 2 72 86 88 86 50 67
+J.Kimmich 3 73 68 84 82 79 74
+Thiago 2 73 75 85 90 68 63
+T.Mueller 1 74 83 80 78 50 71
+J.Boateng 3 73 50 72 66 85 83
+F.Ribery 2 78 76 82 88 30 57
+D.Alaba 3 82 73 80 80 81 75
+A.Robben 2 79 85 81 88 32 62
+N.Sule 3 67 41 52 50 83 82
+J.Martinez 2 51 55 70 65 86 83
+C.Tolisso 2 70 77 79 78 76 81
+K.Conan 2 94 76 75 85 25 60
+S.Gnabry 2 91 81 72 85 44 67
