@@ -45,3 +45,4 @@ MENU
 
 -close
 
+https://www.futwiz.com/en/fifa19/players?minrating=40&maxrating=99&teams[]=243&release=nonspecial
