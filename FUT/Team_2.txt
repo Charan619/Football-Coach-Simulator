@@ -6,3 +6,13 @@ T.Courtois 4 87 91 74 88 46 87
 T.Kroos 2 67 82 89 82 74 69
 Isco 1 72 81 85 92 61 62
 Lulba 3 32 12 45 53 12 44
+Casemiro 2 62 69 75 72 87 88
+Marcelo 3 82 71 83 90 81 82
+G.Bale 2 95 88 84 85 58 76
+K.Navas 4 90 81 75 90 54 82
+R.Varane 3 84 45 61 65 86 80
+K.Benzema 1 76 80 78 84 32 76
+Carvajal 3 83 45 76 81 82 80
+M.Asensio 2 81 84 83 85 43 60
+L.Vazquez 2 81 75 82 82 46 67
+Odriozola 3 81 53 71 73 79 68
