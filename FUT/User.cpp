@@ -169,10 +169,11 @@ User::User(int user_id,int load)
     }
     cout<<"gm="<<j;
 
-    //showTeam(t[team_id],team_id);
-    //showTable(t);
+    showTeam(t[team_id],team_id);
+    showTable(t);
+    system("pause");
     cout<<"Welcome Manager "<<user_name;
-    //changeStart11(t[team_id],team_id);
+    changeStart11(t[team_id],team_id);
     //while(opt1!=0)
     //{
         //cout<<" "
@@ -184,7 +185,7 @@ User::User(int user_id,int load)
             for(int i=0;i<10;i+=2)
             {
                 cout<<sch[j][i]<<"-"<<sch[j][i+1]<<"\n";
-                Game(t[sch[j][i]-1],t[sch[j][i+1]-1]);              //simming game
+                Game(t[sch[j][i]-1],t[sch[j][i+1]-1],t[team_id].Getteam_name());              //simming game
                 system("pause");
             }
             TableWrite(t,file_name);                            //writing table every gameweek

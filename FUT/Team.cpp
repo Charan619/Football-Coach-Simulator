@@ -3,7 +3,7 @@
 #define MAX_PLAYERS 16
 Team::Team(int no)
 {
-    pts=0,wins=0,loss=0,goals_for=0,goals_against=0,goals_diff=0,goals_for=0;
+    pts=0,wins=0,loss=0,draw=0,goals_for=0,goals_against=0,goals_diff=0,goals_for=0;
     attack_style=2;
     defence_style=2;
     attack_width=2;

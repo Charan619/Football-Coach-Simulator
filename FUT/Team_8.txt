@@ -7,12 +7,13 @@ M.Gotze 2 69 73 83 86 59 67
 O.Toprak 3 78 37 63 67 83 74
 R.Burki 4 86 78 72 85 44 76
 L.Piszczek 3 80 68 74 73 81 79
+M.Akanji 3 80 42 65 70 78 77
 J.Weigl 2 68 47 74 76 77 68
 N.Sahin 2 37 69 82 78 75 68
+P.Alcacer 1 70 78 62 75 37 63
 C.Pulisic 2 91 69 71 84 36 58
 M.Dahoud 2 71 68 76 81 63 67
 M.Philipp 1 81 80 71 82 43 65
-P.Alcacer 1 70 78 62 75 37 63
 T.Delaney 2 75 73 75 74 78 83
 J.Sancho 2 87 64 69 84 33 55
-M.Akanji 3 80 42 65 70 78 77
+

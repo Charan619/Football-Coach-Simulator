@@ -13,7 +13,7 @@ Match::Match()
     game_week=0;
 }
 
-void Match::Game(Team &t1,Team &t2)
+void Match::Game(Team &t1,Team &t2,char *id)
 {
     system("cls");
     t1.inc_matches();
@@ -21,7 +21,7 @@ void Match::Game(Team &t1,Team &t2)
     fflush(stdin);
     float t1_att=0,t1_def=0,t2_def=0,t2_att=0;
     //calculating att and def of both teams
-    for(int j=0;j<6;j++)
+    for(int j=0;j<11;j++)
     {
         int i=t1.get_start11(j);
         switch(t1.player(i).Gettype())
@@ -164,7 +164,7 @@ void Match::Game(Team &t1,Team &t2)
 
     system("pause");
     int a1=0,b1=0,att,def;
-    int fl=0,t=0,padding=1380;
+    int fl=0,t=0,padding=2380;
 
 //simming game
     while(t!=90)
@@ -207,17 +207,24 @@ void Match::Game(Team &t1,Team &t2)
             //fl=2;
         //}
         int dly=0;
+        if(strcmpi(t1.Getteam_name(),id)==0||strcmpi(t2.Getteam_name(),id)==0)
         while(dly!=5)
         {
             system("cls");
-            delay(200);
+
             cout<<t+dly<<endl;
-            cout<<a1<<" : "<<b1;
+            cout<<t1.Getteam_code()<<"  "<<a1<<" : "<<b1<<"  "<<t2.Getteam_code();
             if(fl==3&&t+dly==t)
                 cout<<"\nGOALLL!!"<<"  ' "<<t;
             cout<<endl;
             dly++;
+            delay(300);
 
+        }
+        else if(t==85)
+        {
+            cout<<"FULL TIME\n";
+            cout<<t1.Getteam_code()<<"  "<<a1<<" : "<<b1<<"  "<<t2.Getteam_code();
         }
         t+=5;
         padding-=5;

@@ -21,7 +21,8 @@ int main()
     if(opt==1)
     {
         file_obj.open("user_count.txt",ios::out);
-            file_obj<<++user_count;
+        file_obj<<++user_count;
+        file_obj.close();
         User u(user_count,opt);         //creates user
     }
     if(opt==2) //for loading (pls to complete)

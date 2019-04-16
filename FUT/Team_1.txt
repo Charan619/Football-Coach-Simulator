@@ -10,9 +10,9 @@ Rakitic 2 62 84 87 82 72 69
 J.Alba 3 93 69 79 83 79 72
 A.Vidal 2 57 80 79 78 84 83
 S.Roberto 3 78 63 81 77 80 71
-Malcom 2 84 79 81 85 27 64
+Malcom 1 84 79 81 85 27 64
 Arthur 2 69 73 79 82 70 69
 Rafinha 2 70 76 79 84 69 62
-K.P.Boateng 2 66 79 78 80 70 76
+K.P.Boateng 1 66 79 78 80 70 76
 J.Murillo 3 76 40 59 64 80 80
 D.Suarez 2 77 72 80 82 59 59

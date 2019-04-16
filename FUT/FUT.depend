@@ -94,30 +94,33 @@
 	<string.h>
 	<stdlib.h>
 
-1555183182 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.cpp
+1555424927 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.cpp
 	"Team.h"
 	"Player.h"
 
-1554663892 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.h
+1555321211 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.h
 	"Player.h"
 	<iostream>
 	<fstream>
 	<string.h>
 
-1555184174 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.cpp
+1555440129 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.cpp
 	"User.h"
 
-1555183182 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.h
+1555361621 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.h
+	<conio.h>
 	"Match.h"
 	"Manage.h"
 	"Team.h"
 
-1554574165 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.h
+1555414496 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.h
+	<dos.h>
+	<stdlib.h>
 	"Team.h"
 	<stdlib.h>
 	<time.h>
 
-1554664467 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\main.cpp
+1555414496 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\main.cpp
 	"Player.h"
 	"Team.h"
 	"User.h"
@@ -126,10 +129,15 @@
 	<iostream>
 	<fstream>
 
-1554745754 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.cpp
+1555408532 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.cpp
 	"Match.h"
 	<time.h>
+	<time.h>
 
-1555266569 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\manage.h
+1555359310 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\manage.h
 	"Team.h"
+
+1555450882 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\manage.cpp
+	"Manage.h"
+	<iostream>
 

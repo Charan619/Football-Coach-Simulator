@@ -10,8 +10,8 @@ D.Costa 2 95 75 81 91 43 65
 M.Benatia 3 70 45 54 65 87 85
 A.Sandro 3 85 65 77 81 82 83
 S.Khedira 2 57 76 80 78 81 83
+J.Cuadrado 1 91 74 77 87 66 69
 B.Matuidi 2 78 68 77 79 83 83
-J.Cuadrado 2 91 74 77 87 66 69
 M.Mandzukic 1 70 78 71 75 66 85
 A.Barzagli 3 68 34 57 65 89 72
 J.Cancelo 3 89 65 78 83 78 73
