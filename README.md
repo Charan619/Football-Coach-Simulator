@@ -31,7 +31,7 @@ AW of team 1 and DW of team 2:(1 is widest)
 -Manager home page(MENU for after user is created)
 -adding tact settings and changing starting 11(checking if goalie is also in lineup)
 -showTable(done)
--time delay setting while simming match
+-time delay setting while simming match(done)
 -optimize simming(inc weightage to def?)(reduce no of goals scored)(teams w similar stats should usually draw)
 -ui/gui?
 -multiple seasons?
@@ -40,6 +40,7 @@ AW of team 1 and DW of team 2:(1 is widest)
 MENU
 -showTeam
 -showTable
+-choseStart11
 -change tactics(att&def wid&style)
 -sim game
 
