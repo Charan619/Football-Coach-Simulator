@@ -1,8 +1,18 @@
 Manchester United
 MUN
-S.Ramos 3 75 63 71 72 91 84
-L.Modric 2 76 76 90 91 70 67
-T.Courtois 4 87 91 74 88 46 87
-T.Kroos 2 67 82 89 82 74 69
-Isco 1 72 81 85 92 61 62
-Lulba 3 32 12 45 53 12 44
+De Gea 4 90 85 87 94 57 88
+P.Pogba 2 75 79 86 85 69 87
+R.Lukaku 1 84 84 76 75 35 87
+A.Sanchez 2 82 83 79 89 45 77
+N.Matic 2 56 71 79 76 83 83
+A.Martial 2 90 83 73 87 42 73
+J.Mata 2 65 76 84 85 37 50
+M.Rashford 1 93 80 74 83 42 74
+E.Bailly 3 74 42 59 66 82 82
+Fred 2 79 74 77 82 75 71
+J.Lingard 2 81 78 76 84 56 68
+A.Herrera 2 71 72 79 80 78 76
+A.Valencia 3 85 67 76 80 79 79
+C.Smalling 3 68 47 55 59 81 82
+M.Rojo 3 69 60 69 66 79 78
+P.Jones 3 57 53 62 62 80 77
