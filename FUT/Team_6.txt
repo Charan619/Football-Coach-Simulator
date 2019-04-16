@@ -1,8 +1,18 @@
 Juventus
 JUV
-S.Ramos 3 75 63 71 72 91 84
-L.Modric 2 76 76 90 91 70 67
-T.Courtois 4 87 91 74 88 46 87
-T.Kroos 2 67 82 89 82 74 69
-Isco 1 72 81 85 92 61 62
-Lulba 3 32 12 45 53 12 44
+C.Ronaldo 1 90 93 81 90 35 79
+G.Chiellini 3 70 46 57 60 92 84
+P.Dybala 2 85 85 84 91 28 66
+W.Szczesny 4 86 83 73 88 52 84
+L.Bonucci 3 61 58 69 71 87 80
+M.Pjanic 2 66 70 86 86 73 69
+D.Costa 2 95 75 81 91 43 65
+M.Benatia 3 70 45 54 65 87 85
+A.Sandro 3 85 65 77 81 82 83
+S.Khedira 2 57 76 80 78 81 83
+B.Matuidi 2 78 68 77 79 83 83
+J.Cuadrado 2 91 74 77 87 66 69
+M.Mandzukic 1 70 78 71 75 66 85
+A.Barzagli 3 68 34 57 65 89 72
+J.Cancelo 3 89 65 78 83 78 73
+D.Rugani 3 62 39 53 64 85 75
