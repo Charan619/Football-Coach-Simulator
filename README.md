@@ -1,49 +1,6 @@
 # footy-simulator
-Football season simulator using cpp
+Simulates an entire football season simulator using probabilistic models based on real tactics used by managers.
+Each team has 20 unique players with different attributes which factor into the team's win % .
 
-
-            TODO:
---Tactical Settings--
-Attack style and Defence style-1,2,3(1 is least aggressive)
-if AS of team 1 and DS of team 2:
--are equal, no modifiers apply
--1 and 3, *1.4 mod attack stats
--2 and 3, *1.2 mod att stats
--1 and 2, *1.2 mod att stats
--3 and 2, *1.2 mod att stats
--2 and 1, *1.2 att
--3 and 1, *1.4 att
-
-AW of team 1 and DW of team 2:(1 is widest)
--both 1 or 3 ,*1.4 def stats
--2,3, *1.2 def
--2,1, *1.2 def
--1,3, no change
--3,1, no change
--1,2, *1.2
--3,2, *1.2
--both 2,*1.3 def
-
-
--Loading game(done)
--checking if manager name is unique(done)
--player database filling IN NOTEPAD
--Manager home page(MENU for after user is created)
--adding tact settings and changing starting 11(checking if goalie is also in lineup)
--showTable(done)
--time delay setting while simming match(done)
--optimize simming(inc weightage to def?)(reduce no of goals scored)(teams w similar stats should usually draw)
--ui/gui?
--multiple seasons?
-
-
-MENU
--showTeam
--showTable
--choseStart11
--change tactics(att&def wid&style)
--sim game
-
--close
-
+Players' profile built from:
 https://www.futwiz.com/en/fifa19/players?minrating=40&maxrating=99&teams[]=243&release=nonspecial
