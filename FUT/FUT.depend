@@ -1,48 +1,143 @@
 # depslib dependency file v1.0
-1553004091 source:c:\users\admin\desktop\fut\team.cpp
-	"Team.h"
+1553832644 source:z:\oops\fut\player.cpp
 	"Player.h"
 
-1553003265 c:\users\admin\desktop\fut\team.h
-	"Player.h"
-	<iostream>
-	<fstream>
-	<string.h>
-
-1551892911 c:\users\admin\desktop\fut\player.h
-	<iostream>
-	<fstream>
-	<string.h>
-
-1552895211 source:c:\users\admin\desktop\fut\main.cpp
-	"Player.h"
-	"Team.h"
-	<iostream>
-
-1551892786 source:c:\users\admin\desktop\fut\player.cpp
-	"Player.h"
-
-1553072245 source:z:\fut\team.cpp
-	"Team.h"
-	"Player.h"
-
-1553071935 z:\fut\team.h
-	"Player.h"
-	<iostream>
-	<fstream>
-	<string.h>
-
-1553071980 z:\fut\player.h
+1553832644 z:\oops\fut\player.h
 	<iostream>
 	<fstream>
 	<string.h>
 	<stdlib.h>
 
-1553072127 source:z:\fut\main.cpp
+1554120647 source:z:\oops\fut\team.cpp
+	"Team.h"
+	"Player.h"
+
+1553832644 z:\oops\fut\team.h
+	"Player.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1554120692 source:z:\oops\fut\user.cpp
+	"User.h"
+
+1554096968 z:\oops\fut\user.h
+	"Match.h"
+	"Team.h"
+
+1553832644 z:\oops\fut\match.h
+	"Team.h"
+	<stdlib.h>
+	<time.h>
+
+1554120139 source:z:\oops\fut\main.cpp
 	"Player.h"
 	"Team.h"
+	"User.h"
+	"Match.h"
 	<iostream>
+	<fstream>
 
-1553070131 source:z:\fut\player.cpp
+1553832644 source:z:\oops\fut\match.cpp
+	"Match.h"
+	<time.h>
+
+1553635266 source:g:\fut\player.cpp
 	"Player.h"
+
+1553635266 g:\fut\player.h
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdlib.h>
+
+1553635266 source:g:\fut\team.cpp
+	"Team.h"
+	"Player.h"
+
+1553782187 g:\fut\team.h
+	"Player.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1553635266 source:g:\fut\user.cpp
+	"User.h"
+
+1553635266 g:\fut\user.h
+	"Match.h"
+	"Team.h"
+
+1553635266 g:\fut\match.h
+	"Team.h"
+	<stdlib.h>
+	<time.h>
+
+1553779809 source:g:\fut\main.cpp
+	"Player.h"
+	"Team.h"
+	"User.h"
+	"Match.h"
+	<iostream>
+	<fstream>
+
+1553782187 source:g:\fut\match.cpp
+	"Match.h"
+	<time.h>
+
+1554074650 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\player.cpp
+	"Player.h"
+
+1554664467 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\player.h
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdlib.h>
+
+1555424927 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.cpp
+	"Team.h"
+	"Player.h"
+
+1555321211 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\team.h
+	"Player.h"
+	<iostream>
+	<fstream>
+	<string.h>
+
+1555440129 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.cpp
+	"User.h"
+
+1555361621 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\user.h
+	<conio.h>
+	"Match.h"
+	"Manage.h"
+	"Team.h"
+
+1555414496 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.h
+	<dos.h>
+	<stdlib.h>
+	"Team.h"
+	<stdlib.h>
+	<time.h>
+
+1555414496 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\main.cpp
+	"Player.h"
+	"Team.h"
+	"User.h"
+	"Match.h"
+	<time.h>
+	<iostream>
+	<fstream>
+
+1555408532 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\match.cpp
+	"Match.h"
+	<time.h>
+	<time.h>
+
+1555359310 c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\manage.h
+	"Team.h"
+
+1555450882 source:c:\users\admin\desktop\fut\footy-simulator-krc-swaag-21night-user-match\fut\manage.cpp
+	"Manage.h"
+	<iostream>
 
